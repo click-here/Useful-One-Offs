@@ -10,3 +10,6 @@ From [SO](https://stackoverflow.com/questions/11779490/how-to-add-a-new-audio-no
 #### Great for adding audio to gifs
 `ffmpeg -i video.avi -i audio.mp3 -c:v libx264 -c:a libvorbis -shortest output.mkv`
 From [SO](https://stackoverflow.com/questions/11779490/how-to-add-a-new-audio-not-mixing-into-a-video-using-ffmpeg/11783474#11783474)
+
+#### Speed up audio file 2x
+`ffmpeg -i input.mkv -filter:a "atempo=2.0" -vn output.mkv`
