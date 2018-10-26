@@ -13,3 +13,6 @@ From [SO](https://stackoverflow.com/questions/11779490/how-to-add-a-new-audio-no
 
 #### Speed up audio file 2x
 `ffmpeg -i input.mkv -filter:a "atempo=2.0" -vn output.mkv`
+
+#### Stereo audio to mono audio
+`ffmpeg -i stereo.mp3 -ac 1 mono.mp3`
