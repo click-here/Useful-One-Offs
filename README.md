@@ -10,8 +10,10 @@ Get unique count of values in all columns
 ```python
 df.nunique()
 ```
-
-
+See rows are duplicated 
+```python
+df.loc[df.duplicated(keep=False)].sort_values(by=0)
+```
 `
 
 [FFMPEG Simple Reference](https://github.com/click-here/Useful-One-Offs/blob/master/ffmpeg.md)
