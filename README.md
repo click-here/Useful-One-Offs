@@ -1,6 +1,6 @@
 # Useful-One-Offs
 
-# Pandas
+## Pandas
 ```python
 df['Column'].value_counts()
 ```
@@ -38,7 +38,11 @@ Between
 df = pd.DataFrame(np.random.randint(0,100,size=(100, 1)),columns=['score'])
 df.loc[df['score'].between(25, 50, inclusive=False)]
 ```
-
+## Grep
+Find lines in file with both strings in them.
+```console
+grep 'some_string' file.txt | grep 'other_string' 
+```
 [FFMPEG Simple Reference](https://github.com/click-here/Useful-One-Offs/blob/master/ffmpeg.md)
 
 #### pdf2text.exe
